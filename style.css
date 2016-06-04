@@ -1,0 +1,758 @@
+/*
+	Nome do Tema: Rio Encontro
+	Descrição: Tema para o site Rio Encontro
+	Versão: 1.0 
+	Autor: Felipe Martins
+	Email: maaartins@gmail.com
+	Portfólio: https://dribbble.com/martinssays
+*/
+
+html { margin-top: 0px !important; }
+
+body {
+ font-family: 'Titillium Regular';
+ -webkit-font-smoothing:subpixel-antialiased;
+ font-size: 14px;
+ color: #666666;
+ background: #f4f6f9;
+ margin: 0px !important;
+ padding: 0px !important;
+
+}
+
+::selection {
+	background: #8dddff; /* Safari */
+	color: #fff;
+	}
+::-moz-selection {
+	background: #8dddff; /* Firefox */
+	color: #fff;
+}
+
+
+
+@font-face {
+	font-family: 'Titillium SemiBoldItalic';
+	src: url('fontes/TitilliumWeb-SemiBoldItalic.eot');
+	src: url('fontes/TitilliumWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-SemiBoldItalic.woff') format('woff'),
+		url('fontes/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'TitilliumWeb Bold';
+	src: url('fontes/TitilliumWeb-Bold.eot');
+	src: url('fontes/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-Bold.woff') format('woff'),
+		url('fontes/TitilliumWeb-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium Light';
+	src: url('fontes/TitilliumWeb-Light.eot');
+	src: url('fontes/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-Light.woff') format('woff'),
+		url('fontes/TitilliumWeb-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium LightItalic';
+	src: url('fontes/TitilliumWeb-LightItalic.eot');
+	src: url('fontes/TitilliumWeb-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-LightItalic.woff') format('woff'),
+		url('fontes/TitilliumWeb-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Titillium Italic';
+	src: url('fontes/TitilliumWeb-Italic.eot');
+	src: url('fontes/TitilliumWeb-Italic.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-Italic.woff') format('woff'),
+		url('fontes/TitilliumWeb-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Titillium Regular';
+	src: url('fontes/TitilliumWeb-Regular.eot');
+	src: url('fontes/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-Regular.woff') format('woff'),
+		url('fontes/TitilliumWeb-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium Thin';
+	src: url('fontes/TitilliumWeb-Thin.eot');
+	src: url('fontes/TitilliumWeb-Thin.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-Thin.woff') format('woff'),
+		url('fontes/TitilliumWeb-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium SemiBold';
+	src: url('fontes/TitilliumWeb-SemiBold.eot');
+	src: url('fontes/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-SemiBold.woff') format('woff'),
+		url('fontes/TitilliumWeb-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium BoldItalic';
+	src: url('fontes/TitilliumWeb-BoldItalic.eot');
+	src: url('fontes/TitilliumWeb-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-BoldItalic.woff') format('woff'),
+		url('fontes/TitilliumWeb-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Titillium Black';
+	src: url('fontes/TitilliumWeb-Black.eot');
+	src: url('fontes/TitilliumWeb-Black.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-Black.woff') format('woff'),
+		url('fontes/TitilliumWeb-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium ThinItalic';
+	src: url('fontes/TitilliumWeb-ThinItalic.eot');
+	src: url('fontes/TitilliumWeb-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('fontes/TitilliumWeb-ThinItalic.woff') format('woff'),
+		url('fontes/TitilliumWeb-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+a {
+ text-decoration: none;
+ color: #ff69bc;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+a:hover {
+ color: #fa49ab;
+}
+
+img {
+ border: 0px;
+}
+ 
+ /* Styles for dialog window */
+#small-dialog {
+background: #f9f9f9!important; /* Old browsers */
+background: -moz-linear-gradient(top,  #f9f9f9 0%, #f9f9f9 30%, #ffffff 50%, #ffffff 100%)!important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f9f9f9 30%,#ffffff 50%,#ffffff 100%)!important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f9f9f9 0%,#f9f9f9 30%,#ffffff 50%,#ffffff 100%)!important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ffffff',GradientType=0 )!important; /* IE6-9 */
+ background-repeat: no-repeat;
+ padding: 20px 0px 20px 0px;
+ text-align: left;
+ max-width: 860px;
+ margin: 40px auto;
+ position: relative;
+ -webkit-border-radius: 12px 12px 12px 12px;
+ border-radius: 12px 12px 12px 12px;border-radius: 1px;
+ box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.1);       
+}
+
+.itens {
+ display: flex;
+ max-width: 860px;
+ text-align: left;
+ margin: 20px 30px 0px 30px;  
+}
+
+.itens .boxcallhistory{
+ flex-grow: 1; 
+ height: 85px;
+ margin: 0 20px 0 0;
+-webkit-flex-basis: 266px; /* Safari 6.1+ */
+flex-basis: 266px;
+}
+
+
+.itens .boxcallhistory a {
+ text-decoration: none;
+ color: #767676;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.itens .boxcallhistory a:hover {
+ color: #c6c6c6;
+ text-decoration: none;
+}
+
+.itens .boxoutbond{
+ flex-grow: 1; 
+ height: 85px;
+ margin: 0 20px 0 0;
+-webkit-flex-basis: 266px; /* Safari 6.1+ */
+flex-basis: 266px;
+ text-align: right;
+ justify-content: right;
+}
+
+.itens .boxoutbond b{
+ float: right;
+ clear: both;
+ padding: 5px 8px;
+ background: #00db53;
+ text-transform:uppercase;
+ font-weight: bold;
+ color: #fff;
+ margin: 0 10px 5px 0;
+-webkit-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px;
+}
+
+.itens .boxoutbond b.cinza{
+ float: right;
+ padding: 5px 8px;
+ background: #cccccc;
+ text-transform:uppercase;
+ font-weight: bold;
+ color: #fff;
+ margin: 0 10px 5px 0;
+}
+
+.itens .timefone{
+ flex-grow: 1; 
+ height: 85px;
+ margin: -18px 0px 0 0;
+ -webkit-flex-basis: 266px; /* Safari 6.1+ */
+ flex-basis: 266px;
+ text-align: right;
+ justify-content: right;
+}
+
+
+.itens span.seta{
+ text-transform:uppercase;
+ height: 40px;
+ padding: 32px 0 30px 55px;
+ font-family: 'Titillium Thin';
+ font-size: 26px;
+ background-image: url("imagens/seta.png");
+ background-position: left;
+ background-repeat: no-repeat;
+}
+
+
+.itens span.fone{
+ text-transform:uppercase;
+ padding: 0px 55px 0px 0;
+ font-family: 'Titillium Thin';
+ font-size: 52px;
+ background-image: url("imagens/fone.png");
+ background-position: right;
+ background-repeat: no-repeat;
+}
+
+
+
+.dados {
+ display: flex;
+ max-width: 800px;
+ -webkit-flex-basis: 800px; /* Safari 6.1+ */
+ flex-basis: 800px;
+ text-align: left;
+ margin: 0px 0px 0px 0px;  
+}
+
+
+.dados .avatar{
+ flex-grow: 0; 
+ margin: 0 0px 0 0;
+-webkit-flex-basis: 200px;
+flex-basis: 200px;
+text-align: center;
+-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;   
+  user-select: none;     
+                            
+}
+
+
+.dados .avatar img{
+ width: 130px;
+ height: 130px;
+border-radius: 50%;
+}
+
+
+.dados .userinfo{
+ flex-grow: 1; 
+ margin: 0 0px 0 0;
+-webkit-flex-basis: 600px;
+flex-basis: 600px;
+}
+
+
+.dados .userinfo .nomefone{
+ -webkit-flex-basis: 600px;
+flex-basis: 600px;
+ margin: 0 0px 20px 0;
+flex-wrap: wrap;
+}
+
+.dados .userinfo .nomefone a {
+
+ font-weight: normal;
+ color: #00a0e3;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.dados .userinfo .nomefone a:hover {
+ color: #00a0e3;
+ 
+}
+
+
+.dados .userinfo .nomefone h2{
+ float: left;
+ font-family: 'Titillium Thin';
+ font-weight: 100;
+ font-size: 30px;
+ margin: 0px;
+ padding: 0px;
+}
+
+.dados .userinfo .nomefone i.online {
+   background: #00db53; 
+}
+
+
+
+.dados .userinfo .descricao{
+ font-family: 'Titillium Thin', Arial, sans-serif;
+ clear: both;
+ margin: 0px 0px 0 0;
+ font-size: 20px;
+ padding: 0 0 0 25px ;
+ -webkit-flex-basis: 600px;
+flex-basis: 600px;
+ background-image: url("imagens/bioicon.png");
+ background-position: 0px 5px;
+ background-repeat: no-repeat;
+}
+
+.dados .userinfo .descricao a {
+
+ font-weight: normal;
+ color: #aaaaaa;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.dados .userinfo .descricao a:hover {
+ color: #aaaaaa;
+ text-decoration: underline;
+}
+
+
+.calldata {
+ display: flex;
+ max-width: 800px;
+ -webkit-flex-basis: 800px; /* Safari 6.1+ */
+ flex-basis: 800px;
+ text-align: left;
+ margin: 20px 0px 0px 0px;  
+}
+
+.calldata .boxdays {
+ flex-grow: 2;
+ margin: 0 1em 0 0;
+}
+
+.calldata .boxdays .daysago {
+ height: 117px;
+ padding: 1em 0 0 200px;
+ text-transform: uppercase;
+ background-image: url("imagens/fone-ativo.png");
+ background-position: 50px 0px;
+ background-repeat: no-repeat;
+}
+
+.calldata .boxdays .daysago b.cinza{
+ font-size: 18px;
+ padding: 1px 5px;
+ background: #cccccc;
+ text-transform:uppercase;
+ font-weight: bold;
+ color: #fff;
+ margin: 0 10px 0px 0;
+-webkit-border-radius: 2px 2px 2px 2px;
+border-radius: 2px 2px 2px 2px;
+}
+
+.calldata .boxdays .daysago b.days{
+ font-size: 15px;
+ padding: 5px 5px 5px 40px;
+ text-transform:uppercase;
+ font-family: 'Titillium Thin', Arial, sans-serif;
+ background-image: url("imagens/clockico.png");
+ background-position: left;
+ background-repeat: no-repeat;
+ margin: 0px 0px 0px 0;
+}
+
+
+.calldata .boxhist {
+ flex-grow: 1;
+}
+
+.calldata .boxhist  a {
+
+ font-weight: normal;
+ color: #00a0e3;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.calldata .boxhist  a:hover {
+ color: #00a0e3;
+ text-decoration: underline;
+}
+
+
+.calldata .boxhist select {
+    padding:3px;
+    margin: 0 0 10px 110px;
+	 font-family: 'Titillium Thin';
+	 font-size: 16px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 2px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 2px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 2px 0 #ccc, 0 -1px #fff inset;
+    background: #fff;
+    color:#4c4c4c;
+    border:none;
+    outline:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .calldata .boxhist select {padding-right:18px}
+}
+
+.calldata .boxhist label {position:relative}
+.calldata .boxhist label:after {
+    content:'<>';
+    font-family: 'Titillium Thin';
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.calldata .boxhist label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;	
+}
+
+.calldata .boxhist .item-hist {
+ float: left;
+ text-align: center;
+ margin: 0 10px 0 0;
+ font-size: 18px;
+ font-family: 'Titillium Thin', Arial, sans-serif;
+}
+
+.calldata .boxhist .item-hist a {
+ text-decoration: none;
+ color: #ff69bc;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.calldata .boxhist .item-hist a:hover {
+ color: #fa49ab;
+}
+
+.calldata .boxhist .item-histcal {
+ float: left;
+ text-align: center;
+ margin: 5px 20px 0 100px;
+ font-size: 18px;
+ padding: 40px 0 0 0;
+ font-family: 'Titillium Thin', Arial, sans-serif;
+ background-image: url("imagens/calendar.png");
+ background-position: top center;
+ background-repeat: no-repeat;
+}
+
+.calldata .boxhist .item-histnote {
+ float: left;
+ text-align: center;
+ margin: 5px 0px 0 0;
+ font-size: 18px;
+ padding: 40px 0 0 0;
+ font-family: 'Titillium Thin', Arial, sans-serif;
+ background-image: url("imagens/note.png");
+ background-position: top center;
+ background-repeat: no-repeat;
+}
+
+
+.showmore  {
+ display: flex;
+ max-width: 860px;
+ -webkit-flex-basis: 860px; /* Safari 6.1+ */
+ flex-basis: 860px;
+ text-align: left;
+ padding: 0;
+ margin: 30px 0px 0px 0px; 
+ background: #ebeff2; 
+ flex-wrap: wrap;
+}
+
+.showmore .texthead {
+ max-width: 860px;
+ -webkit-flex-basis: 860px; /* Safari 6.1+ */
+ flex-basis: 860px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ text-transform: uppercase;
+ padding: 0;
+ margin: 0px 0px 20px 0px; 
+ background: #ebeff2; 
+}
+
+
+.showmore .texthead h2 {
+ max-width: 420px;
+ -webkit-flex-basis: 420px; /* Safari 6.1+ */
+ flex-basis: 420px;
+ padding: 10px 10px;
+ margin: 0px auto; 
+ margin-top: -20px;
+ font-size: 17px;
+ background: #ebeff2; 
+ color: #6da3cc;
+-webkit-border-radius: 3px 3px 3px 3px;
+border-radius: 3px 3px 3px 3px;
+}
+
+
+.showmore .message   {
+ display: flex;
+ max-width: 760px;
+ -webkit-flex-basis: 760px; /* Safari 6.1+ */
+ flex-basis: 760px;
+ text-align: left;
+ padding: 20px 20px;
+ margin: 0px 30px 30px 30px; 
+ background: #fff; 
+ border: 1px #dfe2e5 solid;
+-webkit-border-radius: 3px 3px 3px 3px;
+border-radius: 3px 3px 3px 3px;
+ flex-wrap: wrap;
+}
+
+
+.showmore .message span  {
+ display: flex;
+ max-width: 660px;
+ -webkit-flex-basis: 660px; /* Safari 6.1+ */
+ flex-basis: 660px;
+ font-size: 18px;
+ padding: 0 10px 0 0;
+ text-align: left;
+ font-family: 'Titillium Thin', Arial, sans-serif;
+}
+
+.showmore .message input  {
+ cursor: pointer;
+ background: #00a0e3;
+ border: 0px;
+ text-transform: uppercase;
+ font-size: 16px;
+ padding: 22px 20px;
+ font-family: 'Lato', Arial, sans-serif;
+-webkit-border-radius: 3px 3px 3px 3px;
+border-radius: 3px 3px 3px 3px;
+ font-weight: 800;
+ color: #fff;
+}
+
+
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

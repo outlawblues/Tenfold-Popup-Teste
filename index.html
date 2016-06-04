@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Teste Popup - Tenfold</title>
+  <meta name="description" content="Teste Popup - Felipe Martins">
+  <meta name="author" content="Tenfold">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="jquery.magnific-popup.js"></script>
+  
+  
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  
+<a class="popup-with-zoom-anim" href="#small-dialog">Clique para Abrir Popup (Efeito Zoom)</a><br>
+<a class="popup-with-move-anim" href="#small-dialog">Clique para Abrir Popup (Efeito Slide In do Topo)</a>
+
+<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+<div id="small-dialog" class=" zoom-anim-dialog mfp-hide ">
+<a href="https://www.tenfold.com/"><img style="margin: 0 0 0 15px; -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;   
+  user-select: none; " src="tenfold-logo.png"></a>
+ <div class="itens"> 
+	 <div class="box boxcallhistory"><span class="seta"><a href="#">Call History</a></span></div>
+	 <div class="box boxoutbond"><b>In Call</b> <br/><b class="cinza">Outbond Call</b></div>
+	 <div class="box timefone"><span class="fone">00:03:57</span></div>
+ </div>
+ 
+  <div class="dados"> 
+  
+	<div class="avatar">
+		<img src="imagens/avatar.jpg">
+	</div>
+	
+	
+	<div class="userinfo">
+		<div class="nomefone">
+		<h2>  <div style=" float: left; margin: 18px 10px 0 0; width:12px;height:12px;-webkit-border-radius: 99px;-moz-border-radius: 99px;border-radius: 99px; background: #00db53; color: #00db53; "> </div> Felipe Martins</h2>
+		<h2 style=" float: right;"><a href="#">+1 (234) 123 123</a></h2>
+		</div>
+		
+		<div class="descricao">
+		Marketing Executive, Inform Group Pty Ltd, Phillippines, Cosmetics. <a href="#">Linkedin</a>, <a href="#">Facebook</a>, <a href="#">Twitter</a> | <a href="#">+Add Field</a>
+		
+		
+		</div>	
+		
+	</div>
+	
+ </div>
+ 
+ <div class="calldata">
+	
+	<div class="boxdays">
+		<div class="daysago">
+			<b class="cinza">Outbond Call</b> <br/><br/>
+			<b class="days">4 Days Ago</b>
+		</div>
+	</div>
+	
+	<div class="boxhist">
+	<label>
+    <select>
+        <option selected> Calls History </option>
+        <option>Call History Option 1</option>
+        <option>Call History Option 2</option>
+    </select>
+	</label></br>
+	<div class="item-histcal"><a href="#">1 Follow Up</a></div>
+	<div class="item-histnote"><a href="#">3 Notes</a></div>
+	</div>
+	
+	
+ </div>
+ 
+ 
+	<div class="showmore">
+		<div class="texthead"><h2>Show More Registers From Felipe Martins</h2></div>
+		<div class="message">
+		<span>Budget is finally available! Needs to pull in some other decision makers.
+		Followup next week. CC sales manager @robert so he can join.</span>
+		<input type="submit" value="Save">
+		</div>
+	</div>
+ 
+ 
+</div>
+  
+  
+  	<script>
+$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
+});
+</script>
+  
+</body>
+
+</html>
